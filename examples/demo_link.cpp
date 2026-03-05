@@ -1,6 +1,5 @@
 #include "../include/cpfuncs.hpp"
-#include std::string
-#define fore for_each
+#define std::fore for_each
 #define range(x) x.begin(), x.end()
 
 int main(){
