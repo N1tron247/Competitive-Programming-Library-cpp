@@ -15,6 +15,9 @@ Personal library I made to speed up solving competitive programming problems and
 - analyze element frequency in a vector and extract important values such as an element average
 - quick rounding and truncating to custom decimal places
 
+A starter template is included in `templates/template.cpp`.
+See `examples/demo_vec.cpp` and `examples/demo_link.cpp`.
+
 ## Examples 
 ```cpp
 #include "../include/cpfuncs.hpp"
@@ -25,4 +28,7 @@ int main() {
     auto even_numbers = nums.math(evens);
     vp(evens, " ");
 }
+
+
+
   
