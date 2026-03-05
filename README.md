@@ -3,7 +3,7 @@
 Personal library I made to speed up solving competitive programming problems and algorithm development/testing.
 
 ## Features 
-- 'vec<T>': shorthand wrapper around 'std::vector'
+- `vec<T>`: shorthand wrapper around `std::vector`
 - quick and efficient filtering of vectors
 - binary search helper function
 - diverse primitive input parsing
