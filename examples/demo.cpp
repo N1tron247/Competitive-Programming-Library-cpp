@@ -1,64 +1,24 @@
-#include "cpfuncs.hpp"
+#include "../include/cpfuncs.hpp"
 #include <utility>
-#define fore for_each
+#define std::fore for_each
 #define range(x) x.begin(), x.end()
 
 int main(){
-    /*vec<int> nums = {10, 20, 40};
-    vec<string> words = {"one", "two", "three"};
-    words.addfront("six");
-    nums.add(7);
-    auto linked = link(nums, words, full);
-    //opp(linked);
-
-    words.add("six-seven");
-
-    auto mapped = mapp(nums, words);
-    //cout << mapped[5] << endl;
-    double got = nums.math(total);
-    //cout << "nums sum: " << got << endl;
-    //auto splot = split("f-f-f-fs-s-g-hsa-fd-s", '-');
-
-    vec<int> jums = {12, 53, 63, 63, 4, 8, 84};
-
-    //cout << jums.math(avg) << endl;
-
-    //vp(jums, "\n"); 
-    auto jgf = jums.math(evens);
-    //cout << jgf[0] << endl;
-    vp(jgf, "\n");
-    cout << endl;
-    auto jum = jums.math(div, 3.0, Round, 3);
-    vp(jum, " ");
-    cout << endl;
-    auto humd = jums.filter(keep, 8, 63, 12);
-
-    auto fun = [](int a) -> bool {
-        return a == 8 || a == 63 || a == 12;
-    };
-
-
-    jums.erase(remove_if(all(jums),fun),jums.end());
-
-    vp(humd, " ");
-
-    string word = "23, 5, fdf, 353";
-
-    auto g = split(word, ',');
-    vp(g, " ");*/
-    vec<int> jums = {12, 53, 63, 63, 4, 8, 84}; //define vector of integers called jums
-    vec<int> final(jums.size()); // define new vector with the same length as jums
-
-    transform(range(jums), final.begin(), [](int x){return x*2; }); //transform alternative to .math function with predefined "mult" argument
-
-    vp(final); //print final (different lines by default since no other arguments were entered)
-
-    string str = "dsjds asds , ds, ds,d,,d";
-    auto splat = split(str, ',');
-    vp(splat);
     
+    vec<int> nums = {12, 53, 63, 63, 4, 8, 84}; //define vector of integers called jums
+    vec<int> final(nums.size()); // define new vector with the same length as jums
 
+    std::transform(range(nums), final.begin(), [](int x){return x*2; }); //transform alternative to .math function with predefined "mult" argument
 
- 
+    auto nums_doubled = nums.math(mult, 2); // use of the .math function to return a vector where every element is multiplied by 2(achieves the same thing as transform in a smaller form)
+    vp(final, " "); //print final (spaced by one each since " " was the argument entered)
+    cout << "\n"; // clear a line
 
+    vp(nums_doubled, " "); //print nums_doubled (spaced by one each since " " was the argument entered)
+
+    string str = "dsjds asds , ds, ds,d,,d"; // create string named str
+    auto split_str = split(str, ','); // creates string vector which contains substrings of str split at the commas since ',' was the selected delimiter
+    cout << "----------------------------------------------\n";
+    vp(split_str); //print split_str (printed on different line since "\n" is the default print spacer)
+    
 }
