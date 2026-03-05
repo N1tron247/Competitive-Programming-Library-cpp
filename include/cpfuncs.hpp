@@ -46,7 +46,7 @@ class vec : public vector<T>{
             this->push_back(val);
         }
 
-        void front(const T& val){
+        void addfront(const T& val){
             this->insert(this->begin(), val);
         }
         
