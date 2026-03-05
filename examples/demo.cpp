@@ -20,5 +20,7 @@ int main(){
     auto split_str = split(str, ','); // creates string vector which contains substrings of str split at the commas since ',' was the selected delimiter
     cout << "----------------------------------------------\n";
     vp(split_str); //print split_str (printed on different line since "\n" is the default print spacer)
+
+    return 0;
     
 }
