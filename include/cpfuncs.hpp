@@ -18,7 +18,17 @@
 #include <cerrno>
 #include <cstdlib>
 
-using namespace std;
+using std::vector;
+using std::string;
+using std::map;
+using std::pair;
+using std::optional;
+using std::stringstream;
+using std::variant;
+using std::cout;
+using std::cin;
+using std::endl;
+
 #define cut "cut"
 #define full "full"
 #define total "sum"
@@ -232,9 +242,8 @@ void vp(const std::vector<T >& vals, string type = "\n"){ //defines a vector<T> 
             cout << type;
         }
 
-        //^prints values on diff lines
-        //^if you want to print in another way change the parts around vals[i]
-        //^ ONLY LINE IN THIS FUNCTION YOU MAY NEED TO EDIT
+        //^prints values on diff lines by default
+       
     }
     cout << endl;
 }
@@ -242,7 +251,7 @@ void vp(const std::vector<T >& vals, string type = "\n"){ //defines a vector<T> 
 template <typename type>
 bool is_number(type){
     bool number;
-    if(is_same<type, string>::value || is_same<type, char>::value){
+    if(std::is_same<type, string>::value || std::is_same<type, char>::value){
         number = false;
     }
     else{
