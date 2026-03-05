@@ -46,12 +46,12 @@ int main(){
 
     auto g = split(word, ',');
     vp(g, " ");*/
-    vec<int> jums = {12, 53, 63, 63, 4, 8, 84};
-    vec<int> final(jums.size());
+    vec<int> jums = {12, 53, 63, 63, 4, 8, 84}; //define vector of integers called jums
+    vec<int> final(jums.size()); // define new vector with the same length as jums
 
-    transform(range(jums), final.begin(), [](int x){return x*2; });
+    transform(range(jums), final.begin(), [](int x){return x*2; }); //transform alternative to .math function with predefined "mult" argument
 
-    //vp(final);
+    vp(final); //print final (different lines by default since no other arguments were entered)
 
     string str = "dsjds asds , ds, ds,d,,d";
     auto splat = split(str, ',');
