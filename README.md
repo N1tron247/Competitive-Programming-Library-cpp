@@ -8,7 +8,7 @@ Personal library I made to speed up solving competitive programming problems and
 - binary search helper function
 - diverse primitive input parsing
 - string and vector manipulation utlities
-- link vectors into a vector pair or a hashmap with the choice of null values for uneven vector lengths or a shortest length cuttof
+- link vectors into a vector pair or a hashmap with the choice of null values for uneven vector lengths or a shortest length cuttoff
 - fast and customizable printing
 - check data types
 - split strings using a delimiter
